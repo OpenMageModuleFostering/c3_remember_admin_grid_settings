@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package>
+    <name>C3_Remember_Admin_Grid_Settings</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>GNU General Public License</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Remembers last sort and filter preferences when displaying admin grids - saved to admin user between sessions</summary>
+    <description>&lt;h1&gt;Who this is for&lt;/h1&gt;&#xD;
+&lt;p&gt;For any Magento admin who is tired of reordering grids how they want to see them every time they log in. Perhaps you always want to view orders filtered by status pending, or want to view CMS pages ordered by date.&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;Magento will remember your grid preferences for the current setting, but forgets them when you log out or when you log in on a different computer.&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;This extension saves these grid preferences against your admin user so that no matter when or where you login, these options will be set the same.&lt;/p&gt;&#xD;
+&#xD;
+&lt;h1&gt;Information&lt;/h1&gt;&#xD;
+&#xD;
+&lt;p&gt;The extension is &lt;a href="https://github.com/c3limited/magento-remember-settings"&gt;Open source on GitHub&lt;/a&gt;&lt;/p&gt;&#xD;
+&lt;p&gt;Include via composer or modman&lt;/p&gt;&#xD;
+&lt;p&gt;Oldest supported CE version is 1.6.0.0&lt;/p&gt;&#xD;
+&lt;p&gt;Developed by C3 Media, a full service &lt;a href="http://www.c3media.co.uk"&gt;Magento agency&lt;/a&gt;&lt;/p&gt;</description>
+    <notes>&lt;ul&gt;&#xD;
+&lt;li&gt;Stable release of extension&lt;/li&gt;&#xD;
+&lt;/ul&gt;</notes>
+    <authors><author><name>C3 Media</name><user>c3media_ltd</user><email>hello@c3media.co.uk</email></author></authors>
+    <date>2015-01-15</date>
+    <time>16:51:50</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="C3_RememberSettings.xml" hash="4cf6a0e07e980b3a2f2ae69f732e2aac"/></dir></target><target name="magelocal"><dir name="C3"><dir name="RememberSettings"><dir name="Helper"><file name="Data.php" hash="6d97b90e8d4e7cf9ddb218d444e0fd37"/></dir><dir name="Model"><dir name="Admin"><file name="Observer.php" hash="bd881024fe829fdaae8f8ab0bcb22a81"/><file name="User.php" hash="a41320f603ef70ae0a4ef78e82b86e72"/></dir><dir name="System"><dir name="Config"><dir name="Source"><file name="Gridkeys.php" hash="542c81c227431c9031e57445ab2a9e19"/></dir></dir></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="a0982413ed9dcca0b4eeda87219fa4a1"/><file name="config.xml" hash="1c3c31bec3914bd83398905710908c47"/><file name="system.xml" hash="e1ab9f3d208d947691a9589d3bbb865e"/></dir><file name="readme.md" hash="bdc12d334adf86de421cd4887d2b9a41"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php><extension><name>Core</name><min/><max/></extension></required></dependencies>
+</package>
